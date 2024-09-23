@@ -1,0 +1,246 @@
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles (Kept your original header) */
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+.logo {
+    height: 50px; /* Set logo height */
+    border-radius: 5px;
+}
+
+.logo-button {
+    background: white;
+    border-width: 0;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center title horizontally */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu-button {
+    background: white;
+    border-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+}
+
+/* Streamer Menu Section */
+.live-actions {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.control-group {
+    margin-bottom: 20px;
+}
+
+.control-group h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.description {
+    font-size: 14px;
+    color: #6f6e77;
+    margin-bottom: 10px;
+}
+
+/* Specific Button Styling */
+.go-live-btn, .schedule-btn, .cancel-btn {
+    border: none;
+    padding: 10px 20px;
+    background-color: #19191c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.go-live-btn:hover, .schedule-btn:hover, .cancel-btn:hover {
+    background-color: #333;
+}
+
+input[type="date"], input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Live Statistics */
+.live-stats {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stats-grid div {
+    font-size: 18px;
+}
+
+.stats-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Live Q&A Section */
+.live-qa {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.qa-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #f4f4f5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.qa-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #6f6e77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.qa-content {
+    font-size: 14px;
+}
+
+.qa-content p {
+    margin: 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Footer Styles (Kept your original footer) */
+footer {
+    background-color: #f4f4f5;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-link {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 60%;
+    margin: 30px auto;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+.side-menu .close-button {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* Open/Close Animation */
+.side-menu.open {
+    width: 250px;
+}

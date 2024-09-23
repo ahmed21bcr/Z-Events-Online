@@ -1,0 +1,214 @@
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    height: 50px;
+    border-radius: 5px;
+}
+
+.logo-button {
+    background: white;
+    border-width: 0;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.menu-button {
+    background: white;
+    border-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+}
+
+/* Main Section */
+.visitor-page {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.news-feed, .live-section, .upcoming-section {
+    margin-bottom: 40px;
+}
+
+/* News Feed (Fil d'actualité) */
+.news-feed h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    background-color: #f4f4f5;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.news-item p {
+    margin: 0;
+}
+
+/* Total Funds Raised */
+.funds-raised {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* All Live Streams Button */
+.all-lives-btn {
+    border: none;
+    padding: 10px 20px;
+    background-color: #19191c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.all-lives-btn:hover {
+    background-color: #333;
+}
+
+/* Live Streams Section */
+.live-section h3, .upcoming-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.live-item, .upcoming-item {
+    background-color: #f4f4f5;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.live-item p, .upcoming-item p {
+    margin: 0;
+}
+
+.live-item .title, .upcoming-item .title {
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f4f4f5;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-link {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 60%;
+    margin: 30px auto;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+.side-menu .close-button {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* Open/Close Animation */
+.side-menu.open {
+    width: 250px;
+}

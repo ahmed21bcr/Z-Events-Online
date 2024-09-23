@@ -1,0 +1,251 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the footer stays at the bottom */
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    height: 50px; /* Set logo height */
+    border-radius: 5px;
+}
+
+.logo-button {
+    background: white;
+    border-width: 0;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center title horizontally */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Menu Button Styles */
+.menu-button {
+    background: white;
+    border-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+}
+
+/* Heading Styles */
+h4 {
+    font-size: 40px;
+    padding: 0;
+    margin: 0; /* Remove spacing around h4 */
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+    color: #6f6e77; /* Set text color */
+}
+
+.date {
+    font-size: 15px;
+}
+
+/* Button Styles */
+.button {
+    border-radius: 7px;
+    border-width: 0;
+    background-color: #19191c;
+    color: white;
+    text-align: center;
+    width: 100; /* Button width */
+    height: 50; /* Button height */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f4f4f5;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+.footer-links {
+    margin-top: 10px; /* Add space above footer links */
+}
+
+.footer-link {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px; /* Add horizontal spacing between links */
+}
+
+.footer-link:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Latest News Section */
+.latest-news {
+    background-color: #f4f4f5;
+    padding: 20px;
+}
+
+/* About Section */
+.about {
+    background-color: white;
+    padding: 20px;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: flex-start; /* Align text and image at the top */
+    gap: 20px; /* Space between text and image */
+}
+
+.about-text {
+    flex: 2; /* Text takes 2/3 of the space */
+}
+
+.about-img {
+    flex: 1; /* Image takes 1/3 of the space */
+    max-width: 200%; /* Prevent image from overflowing */
+    border-radius: 8px; /* Add rounding to the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    display: flex;
+    justify-content: center; /* Center image */
+}
+
+/* Card Container */
+.container {
+    max-width: 100%; /* Adjusted for mobile */
+    display: flex;
+    flex-wrap: wrap; /* Allow elements to wrap when necessary */
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px; /* Set fixed width for cards */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Raise card slightly on hover */
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333; /* Set heading color */
+}
+
+.card p {
+    color: #666; /* Set paragraph color */
+}
+
+.card a {
+    text-decoration: none;
+    color: #626262;
+    font-weight: bold;
+    display: flex; /* Display link as flexbox */
+}
+
+/* Cards Container */
+.cards-container {
+    flex: 1.5; /* Increase space for cards */
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: flex-end; /* Align cards to the right */
+    gap: 20px; /* Space between cards */
+    margin-left: 20px; /* Add space to the left of the cards */
+}
+
+/* Latest News Wrapper */
+.latest-news-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space between news text and cards */
+    align-items: flex-start;
+    gap: 20px; /* Add gap between elements */
+}
+
+/* News Text */
+.news-text {
+    flex: 2; /* News text takes less space */
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+.side-menu .close-button {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* Open/Close Animation */
+.side-menu.open {
+    width: 250px;
+}

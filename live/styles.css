@@ -1,0 +1,215 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the footer stays at the bottom */
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    height: 50px;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.menu-button {
+    background: white;
+    border-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+}
+
+h3 {
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 35px;
+    padding-left: 10px;
+}
+h1 {
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #6f6e77;
+    padding-left: 10px;
+}
+
+.container {
+    max-width: 100px; /* Réduire la largeur maximale pour une meilleure expérience mobile */
+    display: flex;
+    width: 40px;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin: 10px; /* Espace entre les cartes */
+    max-width: 300px; /* Largeur maximale des cartes */
+    width: 320;
+    height: 372.5;
+    display: fmex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.popular-lives {
+    background-color: #f4f4f5;
+    padding: 20px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.float-child {
+    flex: 1 1 300px; /* Chaque enfant occupe au minimum 300px, s'il y a de la place */
+    max-width: 300px; /* Largeur maximale des éléments */
+}
+
+
+.float-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start; /* Aligner à gauche */
+
+}
+.logo-button {
+    background: white;
+    border-width: 0;
+}
+
+footer {
+    background-color: #f4f4f5;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+.footer-links {
+    margin-top: 10px; /* Add space above footer links */
+}
+
+.footer-link {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px; /* Add horizontal spacing between links */
+}
+
+.footer-link:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.look-button {
+    color: black;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+.side-menu .close-button {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* Open/Close Animation */
+.side-menu.open {
+    width: 250px;
+}
+
+.live-details {
+    display: flex; /* Use flexbox to align items side by side */
+    justify-content: space-between; /* Add space between image and info */
+    align-items: flex-start; /* Align items at the top */
+    margin: 20px;
+}
+
+.live-image {
+    flex: 1 1 55%; /* Make the image container take 55% of the width */
+    margin-right: 20px; /* Add some space between the image and the info */
+}
+
+.live-info {
+    flex: 1 1 55%; /* Info takes 55% of the width */
+}
+
+.live-info h1, .live-info p {
+    margin: 10px 0; /* Add margin between elements */
+}
+
+.img-video {
+    border-radius: 10px;
+    width: 100%; /* Make the image take full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 700px; /* Limit the image width to 700px to control the size */
+    max-height: 500px; /* Limit the image height */
+}
