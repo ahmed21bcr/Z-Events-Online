@@ -6,9 +6,4 @@
 
 Pour acceder a la version en ligne de l'application Z-Event, vous devez vous rendre sur : https://z-event-50e72b709bab.herokuapp.com/home/index.php
 
-Vous avez 2 comptes en votre possesions : 
-
-- **Compte Streamer** : user : Streamer, password : 1234
-- **Compte Admin** : user : Admin, password : 1234
-
 Pour accéder au notion : https://www.notion.so/7d1b3f91266a4c4184b91fed836b19ee?v=a54b63196aa54316897215099a4fb633&pvs=4
